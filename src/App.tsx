@@ -1,9 +1,10 @@
 import "./App.css";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
     <>
-      <h1>Jedzel was here!</h1>
+      <Navigation />
     </>
   );
 }
