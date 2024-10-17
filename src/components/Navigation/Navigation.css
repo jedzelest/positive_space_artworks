@@ -1,4 +1,38 @@
-h1 {
-  background-color: antiquewhite;
-  font-size: 2rem;
+/* Navigation Component CSS */
+
+.navigation-container {
+  width: 100%;
+  padding: 18px 64px;
+  background-color: #2f2f2f;
+}
+
+.navigation-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#positive-space-icon {
+  height: 21px;
+  width: 155px;
+  object-fit: contain;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+li img {
+  height: 25px;
+  width: 16px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#user-icon {
+  border-radius: 50%;
 }

@@ -1,10 +1,11 @@
 import "./App.css";
 import Navigation from "./components/Navigation/Navigation";
+import { navigationList } from "./components/Navigation/NavigationData";
 
 function App() {
   return (
     <>
-      <Navigation />
+      <Navigation isLoggedIn={false} navList={navigationList} />
     </>
   );
 }
