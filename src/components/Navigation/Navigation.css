@@ -4,6 +4,7 @@
   width: 100%;
   padding: 18px 64px;
   background-color: #2f2f2f;
+  transition: all 0.5 ease-in-out;
 }
 
 .navigation-contents {
@@ -34,8 +35,34 @@ li img {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 #user-icon {
   border-radius: 50%;
 }
 
 /* Navigation Component Responsiveness */
+
+@media screen and (max-width: 768px) {
+  .default-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navigation-container {
+    padding: 18px 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navigation-container {
+    padding: 18px 30px;
+  }
+}

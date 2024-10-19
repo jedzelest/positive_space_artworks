@@ -22,16 +22,19 @@ const Navigation = ({ navList, isLoggedIn }: Props) => {
             />
             <ul>
               {navList.map((nav) => (
-                <li key={nav.id}>
+                <li key={nav.id} className="default-menu">
                   <img src={nav.icon} alt={nav.help_text} />
                 </li>
               ))}
-              <li>
+              <li className="default-menu">
                 <img
                   id="user-icon"
                   src=".././public/img/Black_WhiteJiezel.png"
                   alt="upload icon"
                 />
+              </li>
+              <li className="hamburger-menu">
+                <img src=".././public/img/hamburger.png" alt="hamburger menu" />
               </li>
             </ul>
           </nav>
