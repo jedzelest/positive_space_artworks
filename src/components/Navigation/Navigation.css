@@ -15,6 +15,7 @@
 #positive-space-icon {
   height: 21px;
   width: 155px;
+  cursor: pointer;
   object-fit: contain;
 }
 
@@ -36,3 +37,5 @@ li img {
 #user-icon {
   border-radius: 50%;
 }
+
+/* Navigation Component Responsiveness */
