@@ -4,7 +4,9 @@
   width: 100%;
   padding: 18px 64px;
   background-color: #2f2f2f;
-  transition: all 0.5 ease-in-out;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .navigation-contents {
