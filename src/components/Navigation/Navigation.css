@@ -37,12 +37,52 @@ li img {
   cursor: pointer;
 }
 
+#user-icon {
+  border-radius: 50%;
+}
+
 .hamburger-menu {
   display: none;
 }
 
-#user-icon {
-  border-radius: 50%;
+.responsive-menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #2f2f2f;
+  padding: 1em 2em;
+  overflow: hidden;
+}
+
+.responsive-menu h3 {
+  color: #fbfef9;
+}
+
+.responsive-nav {
+  width: inherit;
+  padding: 20px;
+}
+
+.responsive-nav > ul {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-nav li {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  gap: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.responsive-nav img {
+  height: 30px;
+  width: 21px;
 }
 
 /* Navigation Component Responsiveness */
