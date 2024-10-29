@@ -1,5 +1,5 @@
 import "./Navigation.css";
-
+import { useState } from "react";
 interface Props {
   isLoggedIn: boolean;
   navList: {
@@ -11,6 +11,11 @@ interface Props {
 }
 
 const Navigation = ({ navList, isLoggedIn }: Props) => {
+  const [dropdownVisibility, setDropdownVisibility] = useState(false); // state for the responsive navigation
+
+  const clickNavigation = () => {
+    setDropdownVisibility(!dropdownVisibility);
+  };
   return (
     <>
       {isLoggedIn && (
@@ -35,7 +40,7 @@ const Navigation = ({ navList, isLoggedIn }: Props) => {
                     alt="upload icon"
                   />
                 </li>
-                <li className="hamburger-menu">
+                <li className="hamburger-menu" onClick={clickNavigation}>
                   <img
                     src=".././public/img/hamburger.png"
                     alt="hamburger menu"
@@ -44,26 +49,28 @@ const Navigation = ({ navList, isLoggedIn }: Props) => {
               </ul>
             </nav>
           </div>
-          <div className="responsive-menu">
-            <nav className="responsive-nav">
-              <ul>
-                {navList.map((nav) => (
-                  <li key={nav.id}>
-                    <img src={nav.icon} alt={nav.help_text} />
-                    <h3>{nav.label}</h3>
+          {dropdownVisibility && (
+            <div className="responsive-menu">
+              <nav className="responsive-nav">
+                <ul>
+                  {navList.map((nav) => (
+                    <li key={nav.id}>
+                      <img src={nav.icon} alt={nav.help_text} />
+                      <h3>{nav.label}</h3>
+                    </li>
+                  ))}
+                  <li>
+                    <img
+                      id="user-icon"
+                      src=".././public/img/Black_WhiteJiezel.png"
+                      alt="upload icon"
+                    />
+                    <h3>Log-out</h3>
                   </li>
-                ))}
-                <li>
-                  <img
-                    id="user-icon"
-                    src=".././public/img/Black_WhiteJiezel.png"
-                    alt="upload icon"
-                  />
-                  <h3>Log-out</h3>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                </ul>
+              </nav>
+            </div>
+          )}
         </div>
       )}
     </>
