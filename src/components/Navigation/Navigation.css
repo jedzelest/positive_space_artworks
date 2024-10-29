@@ -87,7 +87,7 @@ li img {
 
 /* Navigation Component Responsiveness */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .default-menu {
     display: none;
   }
@@ -97,13 +97,13 @@ li img {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .navigation-container {
     padding: 18px 50px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .navigation-container {
     padding: 18px 30px;
   }
