@@ -16,6 +16,7 @@ const Navigation = ({ navList, isLoggedIn }: Props) => {
   const clickNavigation = () => {
     setDropdownVisibility(!dropdownVisibility);
   };
+
   return (
     <>
       {isLoggedIn && (
@@ -42,8 +43,12 @@ const Navigation = ({ navList, isLoggedIn }: Props) => {
                 </li>
                 <li className="hamburger-menu" onClick={clickNavigation}>
                   <img
-                    src=".././public/img/hamburger.png"
-                    alt="hamburger menu"
+                    src={
+                      dropdownVisibility
+                        ? ".././public/img/delete-sign.png"
+                        : ".././public/img/hamburger.png"
+                    }
+                    alt="responsive menu"
                   />
                 </li>
               </ul>

@@ -43,6 +43,7 @@ li img {
 
 .hamburger-menu {
   display: none;
+  transition: all 0.3 ease-in-out;
 }
 
 .responsive-menu {
