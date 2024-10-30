@@ -1,0 +1,91 @@
+/* Login Component CSS */
+
+.login-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-container > img {
+  height: 2.5rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  background-color: #fbfef9;
+  padding: 28px 31px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.first {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.first > h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.first > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.first span {
+  color: #6d4cd8;
+}
+
+.second {
+  width: 100%;
+  height: auto;
+}
+
+.second form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.second > form > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6d4cd8;
+}
+
+.second > form > input {
+  border: 1px solid #a4a5a3;
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 12px 15px;
+  background-color: #fbfef9;
+}
+
+.second a {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6d4cd8;
+}
