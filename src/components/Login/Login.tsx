@@ -26,7 +26,30 @@ const Login = () => {
               <Button context="Login" />
             </form>
           </section>
-          <section className="third"></section>
+          <section className="third">
+            <div className="social-media-links">
+              <div className="link">
+                <a href="#">
+                  <img src=".././public/img/googleIcon.png" alt="Google Icon" />
+                  <p>Sign up with Google</p>
+                </a>
+              </div>
+              <div className="link">
+                <a href="#">
+                  <img
+                    src=".././public/img/facebookIcon.png"
+                    alt="Facebook Icon"
+                  />
+                  <p>Sign up with Google</p>
+                </a>
+              </div>
+            </div>
+            <a href="#">
+              <p>
+                Don't have an account? <span>Sign up</span>
+              </p>
+            </a>
+          </section>
         </div>
       </div>
     </>
