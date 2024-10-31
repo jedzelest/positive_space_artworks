@@ -56,6 +56,17 @@ li img {
   overflow: hidden;
 }
 
+.responsive-menu::before {
+  content: "";
+  position: fixed;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
+  z-index: -1; /* Ensures the overlay is behind menu content */
+}
+
 .responsive-menu h3 {
   color: #fbfef9;
 }
