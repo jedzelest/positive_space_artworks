@@ -40,7 +40,7 @@ const Login = () => {
                     src=".././public/img/facebookIcon.png"
                     alt="Facebook Icon"
                   />
-                  <p>Sign up with Google</p>
+                  <p>Sign up with Facebook</p>
                 </a>
               </div>
             </div>
