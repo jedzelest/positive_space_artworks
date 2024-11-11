@@ -63,8 +63,8 @@ li img {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
-  z-index: -1; /* Ensures the overlay is behind menu content */
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .responsive-menu h3 {
