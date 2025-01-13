@@ -7,7 +7,7 @@ import Button from "./components/Button/Button";
 function App() {
   return (
     <>
-      <Navigation isLoggedIn={true} navList={navigationList} />
+      <Navigation isLoggedIn={false} navList={navigationList} />
       <Login />
     </>
   );
